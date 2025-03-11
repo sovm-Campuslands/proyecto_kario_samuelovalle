@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    animation: carga 3s forwards linear;
+}
+.background__wrapper {
+    background-image: url(../src/Recursos/pexels-pixabay-159400.png);
+    background-color: black;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    z-index: -1000;
+}
+
+.login__card {
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+    border-radius: 50px;
+    opacity: 0;
+    visibility: hidden;
+    animation: loader 2s forwards 3s linear ;
+}
+
+.card__logo {
+    display: flex;
+    flex-direction: column;
+    max-width: 5rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    gap: 5px;
+    font-family: Roboto;
+}
+.card__logo span {
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+.card__logo img {
+    max-width: 100%;
+}
+
+.login__card--body {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.login__card--body h1 {
+    margin: 0;
+    color: rgb(68, 68, 68);
+}
+.login__card--body p {
+    font-family: sans-serif;
+    color: gray;
+}
+.login__card .login__form {
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+.login__card .login__form form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.login__card .login__form form div {
+    min-width: 70%;
+}
+.login__card .login__form .input__container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 7px;
+    gap: 5px;
+    font-size: 1.4rem;
+    color: rgb(92, 92, 92);
+    max-width: 70%;
+}
+.form__input {
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+.login__card--footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(94, 94, 94);
+}
+.login__card--footer span {
+    font-size: .8rem;
+    padding: 0 8rem;
+    margin-bottom: 20px;
+}
+#submit--button {
+    background-color: rgb(238, 87, 0);
+    padding: 20px 5rem;
+    color: white;
+    border-radius: 35px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+@keyframes loader {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes carga {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    30% {
+        opacity: 1;
+        visibility: visible;
+    }
+    60% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    90% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
