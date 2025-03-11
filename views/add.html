@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Indicador</title>
+
+    <link rel="stylesheet" href="/public/add.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="../src/Recursos/kario sin kairo.svg" style="max-width: 150px;" alt="Header Logo Kario Sin Media">
+        <div class="--title">
+            <h1>Añadir Indicador</h1>
+            <select name="categorias" id="inp__categ" form="add-formulary" required>
+                <option value="">Categorías</option>
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+            </select>
+            <select name="areas" id="inp__areas" form="add-formulary" required>
+                <option value="">Área</option>
+                <option value="baja">Marketing</option>
+                <option value="media">Developers</option>
+                <option value="alta">Diseño</option>
+                <option value="alta">Producción</option>
+                <option value="alta">Gerencia</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button class="--button"  type="submit" form="add-formulary">Guardar</button>
+            <a class="--button" href="/views/dashboard.html">Volver</a>
+        </div>
+    </header>
+    <main>
+        <form action="dashboard.html" id="add-formulary">
+            <div class="form__header">
+                <input type="text" placeholder="Indicador" required>
+                <input type="text" placeholder="Descripción" required>
+                <input type="text" placeholder="Fórmula" required>
+                <input type="text" placeholder="Frecuencia" required>
+            </div>
+            <div class="form__footer">
+                <input type="date" required>
+                <input type="date" required>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

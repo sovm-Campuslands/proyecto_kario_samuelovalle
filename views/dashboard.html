@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="../public/profile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="profile-background__wrapper">
+
+        <div class="loader"><img src="../src/Recursos/kario sin kairo.svg" alt=""></div>
+
+        <div class="profile__card">
+            <div class="header">
+                <img src="../src/Recursos/kario sin kairo.svg" alt="" id="logo--image">
+                <span class="login__card--text">MEDIA</span>
+            </div>
+            <div class="body">
+                <h2>Bienvenido de nuevo</h2>
+                <img src="../src/Recursos/pp@2x.png" alt="">
+                <h1>Pedro Felipe Gómez Bonilla</h1>
+                <span style="margin-bottom: 200px;">Usuario Administrador</span>
+            </div>
+        </div>
+    </section>
+    <section class="dashboard-background__wrapper">
+        <section class="dashboard__header">
+            <nav id="navbar">
+                <a href="/views/add.html" class="--link"><img src="../src/Recursos/Group 3.svg"
+                        alt="Link to Add Indicator Page"> Añadir</a>
+
+                <a href="" class="--link"><img src="../src/Recursos/Icon open-reload.svg" alt=""> Refrescar</a>
+
+                <a href="delete.html" class="--link"><img src="../src/Recursos/Icon material-delete-forever.svg" alt="">
+                    Eliminar</a>
+
+                <a href="#" class="--link" id="main"><img src="../src/Recursos/kario sin kairo.svg" alt=""
+                        style="max-width: 50px;"></a>
+
+                <a href="/views/report.html" class="--link"><img src="../src/Recursos/Icon material-bug-report.svg"
+                        alt=""> Reportar</a>
+
+                <a href="#" class="--link"><img src="../src/Recursos/ayuda.png" alt=""> Ayuda</a>
+            </nav>
+            <div class="profile__tools">
+                <a href="/views/settings.html"><img src="../src/Recursos/Icon ionic-ios-settings.svg" alt=""></a>
+                <a href="/views/notif.html"><img src="../src/Recursos/Icon material-notifications-active.svg"
+                        alt=""></a>
+                <a href="/views/settings.html"><img src="../src/Recursos/pp.png" alt=""></a>
+            </div>
+        </section>
+        <section class="dashboard__body">
+            <h1>Panel de Indicadores</h1>
+            <h4>Aqui puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo.</h4>
+            <div class="table__container">
+                <table>
+                    <thead>
+                        <tr id="thead">
+                            <th>Indicador</th>
+                            <th>Descripción</th>
+                            <th>Categoría</th>
+                            <th>Fecha de Inicio</th>
+                            <th>Fecha Terminación</th>
+                            <th>Fórmula</th>
+                            <th>Frecuencia</th>
+                            <th>Cumplimiento</th>
+                            <th>Área</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Modelado 3d</td>
+                            <td>Interés..</td>
+                            <td>Baja</td>
+                            <td>12/05/21</td>
+                            <td>12/12/12</td>
+                            <td>Met.Agil</td>
+                            <td>1/4</td>
+                            <td>
+                                <div class="circle"><span>31%</span></div>
+                            </td>
+                            <td>Marketing</td>
+                        </tr>
+                        <tr>
+                            <td>Finca Galeón</td>
+                            <td>Diseño de maque....</td>
+                            <td>Baja</td>
+                            <td>12/04/21</td>
+                            <td>12/05/21</td>
+                            <td>Met.Agil</td>
+                            <td>1/4</td>
+                            <td>
+                                <div class="circle"><span>25%</span></div>
+                            </td>
+                            <td>Diseño</td>
+                        </tr>
+                        <tr>
+                            <td>Colegios Privados</td>
+                            <td>Se busca llegar a los...</td>
+                            <td>Media</td>
+                            <td>24/04/21</td>
+                            <td>12/11/21</td>
+                            <td>Met.Fibo</td>
+                            <td>1/4</td>
+                            <td>
+                                <div class="circle" id="c1"><span>80%</span></div>
+                            </td>
+                            <td>Developers</td>
+                        </tr>
+                        <tr>
+                            <td>Electrodomésticos</td>
+                            <td>Ventas de electro..</td>
+                            <td>Media</td>
+                            <td>12/04/21</td>
+                            <td>12/09/21</td>
+                            <td>N/A</td>
+                            <td>1/3</td>
+                            <td>
+                                <div class="circle"><span>32%</span></div>
+                            </td>
+                            <td>Gerencia</td>
+                        </tr>
+                        <tr>
+                            <td>Estrato 2 -Floridablanca</td>
+                            <td>Impactoen los sec..</td>
+                            <td>Alta</td>
+                            <td>12/04/21</td>
+                            <td>12/09/21</td>
+                            <td>Met.Expo</td>
+                            <td>1/4</td>
+                            <td>
+                                <div class="circle" id="c1"><span>95%</span></div>
+                            </td>
+                            <td>Marketing</td>
+                        </tr>
+                        <tr>
+                            <td>Jóvenes en Acción</td>
+                            <td>Impacto en los sec..</td>
+                            <td>Alta</td>
+                            <td>15/02/21</td>
+                            <td>09/11/21</td>
+                            <td>Met.Expo</td>
+                            <td>1/2</td>
+                            <td>
+                                <div class="circle" id="c2"><span>75%</span></div>
+                            </td>
+                            <td>Producción</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="/views/add.html" class="button--addE">Añadir Elementos</a>
+        </section>
+    </section>
+</body>
+
+</html>
